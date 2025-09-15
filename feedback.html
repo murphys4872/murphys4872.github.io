@@ -1,0 +1,120 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Feedback</title>
+    <style>
+        body {
+            background-color: blue;
+            font-family: Arial, sans-serif;
+            color: white;
+            padding: 20px;
+        }
+
+        h2 {
+            color: white;
+        }
+
+        nav {
+            background-color: #003366; /* Darker blue for contrast */
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input[type="text"], select, textarea {
+            margin-top: 5px;
+            padding: 5px;
+            width: 250px;
+            border: none;
+        }
+
+        textarea {
+            height: 100px;
+            background-color: yellow;
+            color: black;
+        }
+
+        fieldset {
+            margin-top: 15px;
+            padding: 10px;
+            border: 1px solid white;
+            width: 280px;
+        }
+
+        .buttons {
+            margin-top: 10px;
+        }
+
+        input[type="submit"], input[type="reset"] {
+            background-color: orange;
+            border: none;
+            padding: 8px 12px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover, input[type="reset"]:hover {
+            background-color: darkorange;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="table.html">Services</a>
+        <a href="form.html">Contact Us</a> </nav>
+
+    <h2>Customer Feedback</h2>
+
+    <form>
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName">
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName">
+
+        <label for="language">Services You Had Done:</label>
+        <select id="language" name="language">
+            <option value="Virus Removal">Virus Removal</option>
+            <option value="Data Recovery">Data Recovery</option>
+            <option value="Hardware Installation">Hardware Installation</option>
+            <option value="Operating System Installation">Operating System Installation</option>
+            <option value="Software Troubleshooting	">Software Troubleshooting</option>
+        </select>
+
+       <fieldset>
+    <legend>Rate Your Experience</legend>
+    <label><input type="radio" name="experience" value="great"> Great</label><br>
+    <label><input type="radio" name="experience" value="good"> Good</label><br>
+    <label><input type="radio" name="experience" value="fair"> Fair</label><br>
+    <label><input type="radio" name="experience" value="poor"> Poor</label>
+</fieldset>
+
+
+        <br>
+        <textarea placeholder="Enter your comment here..."></textarea>
+
+        <div class="buttons">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/MgG5XZ0Vrx8?si=fe1yKTjKbDR2xlnx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
